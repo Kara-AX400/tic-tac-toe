@@ -3,3 +3,58 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.pagewrap::before{
+    content: "Tic-Tac-Toe";
+    display: block;
+    text-align:center;
+    font-size: 50px;
+}
+.pagewrap{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 90px;
+}
+
+.scorewrap{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.scoreboxX, .scoreboxO {
+    text-align: center;
+    border: 2px solid black;
+    min-width: 100px;
+    min-height: 100px;
+}
+
+
+.gamewrap{
+    display: flex;      
+    flex-wrap: wrap;     
+    gap: 3px;           
+    width: 100%;       
+    max-width: 600px;    
+    margin: 0 auto;
+}
+
+.play{
+    display:flex;
+    min-height: 100px;
+    min-width: 100px;
+    border: 2px solid black;
+    flex: 0 0 calc((100% - 20px) / 3);
+    aspect-ratio: 1;
+    border-radius: 5px;
+}
+
+.play:hover{
+    transition: background-color 0.5s ease;
+    background-color: rgb(228, 228, 228);
+}
