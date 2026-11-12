@@ -28,10 +28,13 @@
 }
 
 .scoreboxX, .scoreboxO {
+    display: flex;
+    justify-content: center;
     text-align: center;
     border: 2px solid black;
     min-width: 100px;
     min-height: 100px;
+    padding-top: 5px;
 }
 
 
@@ -46,6 +49,9 @@
 
 .play{
     display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
     min-height: 100px;
     min-width: 100px;
     border: 2px solid black;
@@ -57,4 +63,8 @@
 .play:hover{
     transition: background-color 0.5s ease;
     background-color: rgb(228, 228, 228);
+}
+
+.play.winner {
+    background-color: lightgreen;
 }
